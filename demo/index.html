@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Tag Contacts Demo</title>
+    <link href="../tag-contacts.css" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="../tag-contacts.js"></script>
+
+    <script src="data.js"></script>
+</head>
+<body>
+    <div id="contacts" style="padding: 30px; width: 500px; "></div>
+    <script>
+        $(function () {
+            /*
+                The simplest usage, init with a data list.
+                The data can be like this:
+                var data = [
+                    {
+                        "id": "user001",
+                        "avatar": "1.jpg",
+                        "displayName": "Tim Young",
+                        "email": "tim.young@test.com"
+                    },
+                    ...
+                ]
+            */
+            $("#contacts").tagContacts(data);
+        });
+    </script>
+</body>
+</html>

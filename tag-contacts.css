@@ -1,0 +1,232 @@
+.tag-contacts-wrapper {
+    margin: 0;
+    padding: 3px 0 0 3px;
+    list-style: none;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    line-height: 0;
+    font-size: 14px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.tag-contacts-wrapper li {
+    vertical-align: middle;
+    padding: 0;
+    margin: 0 3px 3px 0;
+    display: inline-block;
+}
+
+.tag-contacts-wrapper li.tag-contacts-tag {
+    padding: 0 4px 0 8px;
+    line-height: 28px;
+    height: 28px;
+    border-radius: 4px;
+    cursor: default;
+    white-space: nowrap;
+    overflow: hidden;
+    /* btn-primary */
+    color: #222;
+    /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);*/
+    background-color: lightgrey;
+    *background-color: lightgrey;
+    background-image: -moz-linear-gradient(top, lightgrey, lightgrey);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(lightgrey), to(lightgrey));
+    background-image: -webkit-linear-gradient(top, lightgrey, lightgrey);
+    background-image: -o-linear-gradient(top, lightgrey, lightgrey);
+    background-image: linear-gradient(to bottom, lightgrey, lightgrey);
+    background-repeat: repeat-x;
+    border-color: #0044cc #0044cc #002a80;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);*/
+}
+
+.tag-contacts-wrapper li.tag-contacts-tag .icon-remove {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-top: 1px;
+    *margin-right: .3em;
+    line-height: 14px;
+    vertical-align: text-top;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOBAMAAADtZjDiAAAAFVBMVEX///9mZmZmZmZmZmZmZmZmZmZmZmavL3wOAAAABnRSTlMAIDCg8PO2PM9PAAAAQElEQVR4XmWMuwkAIAxEoy5g4QAi2ruCFhlAcIPg/iOYFFflmgf3I69MwZA29aks0ngpI1+pFox3CISPHnb4cfqmjweTArJi6gAAAABJRU5ErkJggg==') /*icon-remove.png*/;
+    background-repeat: no-repeat;
+    margin-left: 3px;
+    opacity: 0.8;
+    cursor: pointer;
+    -moz-transition: opacity linear 0.2s;
+    -o-transition: opacity linear 0.2s;
+    -webkit-transition: opacity linear 0.2s;
+    transition: opacity linear 0.2s;
+}
+
+.tag-contacts-wrapper li.tag-contacts-tag .icon-remove:hover {
+    opacity: 1;
+}
+
+.tag-contacts-wrapper li.tag-contacts-input-wrapper {
+    height: 28px;
+}
+
+.tag-contacts-wrapper li.tag-contacts-input-wrapper input {
+    display: block;
+    border: none;
+    padding: 4px 0 4px 4px;
+    margin: 0;
+    outline: none;
+    line-height: 20px;
+    height: 20px;
+}
+
+.tag-contacts-dropdown {
+    position: absolute;
+}
+
+.tag-contacts-dropdown li a {
+    padding: 3px 20px 3px 10px !important;
+    height: 50px;
+    cursor: default;
+}
+
+.tag-contacts-dropdown li a:hover {
+    color: inherit;
+    background: none;
+    filter: initial;
+}
+
+.tag-contacts-dropdown li a img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+.tag-contacts-dropdown li a div {
+    margin-left: 58px;
+}
+
+.tag-contacts-dropdown li a .display-name {
+    line-height: 26px;
+}
+
+.tag-contacts-dropdown li a .email {
+    line-height: 20px;
+    color: #999999;
+}
+
+.tag-contacts-dropdown li.active a .email {
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+
+/*
+    BOOTSTRAP dropdown-menu style
+*/
+.contacts-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    *border-right-width: 2px;
+    *border-bottom-width: 2px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+.contacts-dropdown-menu.pull-right {
+    right: 0;
+    left: auto;
+}
+
+.contacts-dropdown-menu .divider {
+    *width: 100%;
+    height: 1px;
+    margin: 9px 1px;
+    *margin: -5px 0 5px;
+    overflow: hidden;
+    background-color: #e5e5e5;
+    border-bottom: 1px solid #ffffff;
+}
+
+.contacts-dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 20px;
+    color: #333333;
+    white-space: nowrap;
+}
+
+.contacts-dropdown-menu > li > a:hover,
+.contacts-dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #0081c2;
+    background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+    background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+    background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+    background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
+}
+
+.contacts-dropdown-menu > .active > a,
+.contacts-dropdown-menu > .active > a:hover,
+.contacts-dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #0081c2;
+    background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+    background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+    background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+    background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+    background-repeat: repeat-x;
+    outline: 0;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
+}
+
+.contacts-dropdown-menu > .disabled > a,
+.contacts-dropdown-menu > .disabled > a:hover,
+.contacts-dropdown-menu > .disabled > a:focus {
+    color: #999999;
+}
+
+.contacts-dropdown-menu > .disabled > a:hover,
+.contacts-dropdown-menu > .disabled > a:focus {
+    text-decoration: none;
+    cursor: default;
+    background-color: transparent;
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
